@@ -8,16 +8,27 @@ body{
   align-items: center;
   padding: 0;
   font-family: "Gayathri", sans-serif;
+  width: 100%;
+  /* height: 100vh; */
+  margin: 0px;
 }
 header{
   background: #ffffff;
-  width: 110%;
+  width: 100%;
   color: #4f004d;
   display: flex;
   justify-content: center;
-  padding: 16px 0 8px 0;
+  padding: 24px 0 8px 0;
   font-size: 24px;
   margin: -10px 0;
+}
+.nedra{
+  margin-right: 16px;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 img{
   margin-top: 40px;
@@ -29,16 +40,18 @@ p{
   padding: 40px;
 }
 nav{
+  height: calc(89vh - 90px);
   display: flex;
   flex-direction: column;
   align-items: center;
   background: rgb(0, 134, 191);
-  width: 110%;
-  margin-bottom: -10px;
+  width: 100%;
+  margin-bottom: -100px;
   padding: 30px 0 50px 0;
 }
 a{
-  padding: 16px;
+  padding: 14px;
+  padding-top: 20px;
   width: 250px;
   margin: 12px;
   color: white;
@@ -47,7 +60,6 @@ a{
   text-align: center;
   font-size: 1.2rem;
 }
-
 .fb{
   background: rgb(59, 89, 152);
 }
@@ -73,6 +85,74 @@ a{
 .younique:hover{
   background-color: rgb(99, 20, 97);
 }
-footer{
+/* footer{
   margin: -10px;
+} */
+
+@media (min-width: 650px){
+  header{
+    height: 70px;
+    font-size: 50px;
+    padding-top: 35px;
+  }
+  .nedra{
+    margin-right: 250px;
+  }
+  img{
+    margin-top: -90px;
+  }
+  section{
+    flex-direction: row;
+    margin-top: -100px;
+    z-index: -1;
+  }
+  .bio{
+    margin-top: 24vh;
+    width: 50%;
+    
+  }
+  section nav{
+    width: calc(50% + 100px);
+  }
+  .fb{
+    margin-top: 100px;
+  }
+}
+@media (min-width: 1000px){
+  header{
+    font-size: 70px;
+    height: 80px;
+    padding-top: 45px;
+  }
+  .nedra{
+    margin-right: 350px;
+  }
+  .bio{
+    width: calc( 50% - 140px);
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  section{
+    margin-top: -150px;
+  }
+  img{
+    width: 220px;
+    height: 220px;
+  }
+  p{
+    width: 100px;
+    font-size: 20px;
+  }
+  a{
+    width: 350px;
+  }
+}
+
+@media (max-height: 600px){
+ section{
+  height: 100%;
+ }
+ nav{
+   height: 100%;
+ }
 }
